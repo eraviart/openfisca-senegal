@@ -1,0 +1,11 @@
+name: OpenFisca Senegal
+
+on: push
+
+jobs:
+  validate_yaml:
+    uses: tax-benefit/actions/.github/workflows/validate_yaml.yml@v0.1.3
+    with:
+      parameters_path: "openfisca_senegal/parameters"
+    secrets:
+      token: ${{ secrets.CONTROL_CENTER_TOKEN }}
