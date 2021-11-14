@@ -1,4 +1,4 @@
-name: OpenFisca Senegal
+name: Validate YAML
 
 on:
   - push
